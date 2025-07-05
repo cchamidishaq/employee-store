@@ -43,6 +43,9 @@ const Navigation = () => {
             <Link to="/dashboard" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium">
               Dashboard
             </Link>
+            <Link to="/admin" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium">
+              Admin
+            </Link>
           </div>
 
           {/* Right Side Icons */}
@@ -67,8 +70,8 @@ const Navigation = () => {
               </Button>
             </Link>
 
-            {/* User Profile / Login */}
-            <Link to="/login">
+            {/* User Profile */}
+            <Link to="/profile">
               <Button variant="ghost" size="sm" className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                 <User className="w-5 h-5" />
               </Button>
@@ -102,8 +105,14 @@ const Navigation = () => {
               <Link to="/dashboard" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
                 Dashboard
               </Link>
+              <Link to="/admin" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
+                Admin
+              </Link>
               <Link to="/cart" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
                 Cart
+              </Link>
+              <Link to="/profile" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
+                Profile
               </Link>
               <Link to="/login" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
                 Login
