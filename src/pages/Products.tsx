@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
@@ -289,7 +288,7 @@ const Products = () => {
                 <Checkbox
                   id="employee-only"
                   checked={showEmployeeOnly}
-                  onCheckedChange={setShowEmployeeOnly}
+                  onCheckedChange={(checked) => setShowEmployeeOnly(checked as boolean)}
                 />
                 <label 
                   htmlFor="employee-only"
