@@ -67,10 +67,12 @@ const Navigation = () => {
               </Button>
             </div>
 
-            {/* User Profile */}
-            <Button variant="ghost" size="sm" className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-              <User className="w-5 h-5" />
-            </Button>
+            {/* User Profile / Login */}
+            <Link to="/login">
+              <Button variant="ghost" size="sm" className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                <User className="w-5 h-5" />
+              </Button>
+            </Link>
 
             {/* Mobile Menu Toggle */}
             <Button
@@ -99,6 +101,9 @@ const Navigation = () => {
               </Link>
               <Link to="/dashboard" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
                 Dashboard
+              </Link>
+              <Link to="/login" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 px-3 py-2 transition-colors">
+                Login
               </Link>
             </div>
           </div>
