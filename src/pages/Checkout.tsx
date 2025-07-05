@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
@@ -73,10 +72,10 @@ const Checkout = () => {
     }
   ];
 
-  const subtotal = 449.97;
-  const shipping = 0;
-  const tax = 36.00;
-  const total = 485.97;
+  const subtotal: number = 449.97;
+  const shipping: number = 0;
+  const tax: number = 36.00;
+  const total: number = 485.97;
 
   const handleInputChange = (section: string, field: string, value: string) => {
     if (section === 'shipping') {
